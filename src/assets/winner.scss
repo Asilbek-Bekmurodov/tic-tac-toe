@@ -1,6 +1,4 @@
-body {
-  background-color: black;
-}
+
 .winnerBg {
   //   background: linear-gradient(180deg, #e1ca19 #2fd1bb);
   //   background-size: 200% 200%;
@@ -9,9 +7,10 @@ body {
   padding: 8px;
   width: max-content;
   height: max-content;
+
   background: linear-gradient(-45deg, #1ee832, #a105f5 88.02%, #ffffff);
   background-size: 400% 400%;
-  animation: gradient 0.7s ease infinite;
+  animation: gradient .7s ease infinite;
   &_winner {
     display: flex;
     justify-content: center;
