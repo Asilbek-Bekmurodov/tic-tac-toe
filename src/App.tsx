@@ -1,12 +1,12 @@
-import Winner from "./components/winner";
-import { Plus } from "./icons";
-import "./assets/base.scss";
+import React from "react";
+import "../src/assets/base.scss";
+import Tictac from "./components/tic-tac";
 
 function App() {
   
   return (
     <div>
-      
+      <Tictac />
     </div>
   );
 }

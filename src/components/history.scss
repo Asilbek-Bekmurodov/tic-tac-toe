@@ -1,0 +1,23 @@
+.history {
+  width: max-content;
+  .history-cart {
+    width: max-content;
+    color: white;
+    background: linear-gradient(180deg, #59f90f 0%, #1e958e 100%);
+    border-radius: 43px;
+    padding: 5px;
+    .history-child {
+      background-color: #000;
+      text-align: center;
+      border-radius: 43px;
+
+      font-family: "MuseoModerno";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 48px;
+      padding: 0 10px;
+      color: #42f802;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.game-zone{
+    width: 461px;
+    height: 461px;
+    background-color: #42F802;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+
+    .box{
+        width: 100%;
+        height: 152px;
+        background-color: #000000;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+    }
+}
+
