@@ -1,5 +1,8 @@
+import History from "./history";
 export default function Tictac() {
   return (
-    <div>Tictac</div>
-  )
+    <div className="container">
+      <History/>
+    </div>
+  );
 }
