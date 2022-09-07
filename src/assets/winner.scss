@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+}
+.winnerBg {
+  //   background: linear-gradient(180deg, #e1ca19 #2fd1bb);
+  //   background-size: 200% 200%;
+
+  border-radius: 500px;
+  padding: 8px;
+  width: max-content;
+  height: max-content;
+  background: linear-gradient(-45deg, #1ee832, #a105f5 88.02%, #ffffff);
+  background-size: 400% 400%;
+  animation: gradient 0.7s ease infinite;
+  &_winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: max-content;
+    background-color: black;
+    color: #42f802;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 500px;
+    h1 {
+      font-weight: 400;
+      font-size: 72px;
+      line-height: 54px;
+      padding: 0;
+      margin: 0;
+    }
+    svg {
+      width: 57px;
+      height: 57px;
+      transform: translate(0px, 8px);
+    }
+  }
+}
+
+@keyframes example {
+  0% {
+    background: linear-gradient(60deg, #b619e1 0%, #0008aa 88.02%);
+  }
+  25% {
+    background: linear-gradient(90deg, #0ee2fe 0%, #322fd1 88.02%);
+  }
+  50% {
+    background: linear-gradient(150deg, #ca1313 0%, #03e44e 88.02%);
+  }
+  100% {
+    background: linear-gradient(40deg, #8f18fe 0%, #2fd1bb 88.02%);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

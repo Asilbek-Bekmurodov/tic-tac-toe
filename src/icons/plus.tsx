@@ -12,7 +12,7 @@ const Plus = (
       x2="136.182"
       y2="132.818"
       stroke="#42F802"
-      stroke-width="9"
+      strokeWidth="9"
     />
     <line
       x1="136.182"
@@ -20,7 +20,7 @@ const Plus = (
       x2="9.18199"
       y2="132.182"
       stroke="#42F802"
-      stroke-width="9"
+      strokeWidth="9"
     />
   </svg>
 );
