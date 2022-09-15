@@ -7,6 +7,7 @@ import Plus from "../icons/plus";
 
 interface GameZoneProps {
   data: any;
+  
   onClick: any;
 }
 
