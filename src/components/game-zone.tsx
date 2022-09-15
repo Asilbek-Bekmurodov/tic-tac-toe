@@ -2,32 +2,25 @@ import "./game-zone.scss";
 import zero from "../icons/0";
 import plus from "../icons/plus";
 
-// export default function GameZone() {
-//   return (
-//     <div className="game-zone">
-//       <div className="box">{zero}</div>
-//       <div className="box">{plus}</div>
-//       <div className="box"></div>
-//       <div className="box"></div>
-//       <div className="box"></div>
-//       <div className="box"></div>
-//       <div className="box">{zero}</div>
-//       <div className="box"></div>
-//       <div className="box"></div>
-//     </div>
-//   );
-// }
-
 import React from "react";
+import Plus from "../icons/plus";
 
 interface GameZoneProps {
   data: any;
+  onClick: any;
 }
 
-const GameZone: React.FC<GameZoneProps> = ({ data }) => (
+const GameZone: React.FC<GameZoneProps> = ({ data, onClick }) => (
   <div className="game-zone">
-    {data.map((item: any) => (
-      <div className="box">{item.icon}</div>
+    {data.map((item: any, idx: any) => (
+      <button
+        onClick={() => onClick(idx)}
+        disabled={item.disabled}
+        key={idx}
+        className="box"
+      >
+        {item.icon === "" ? "" : item.icon === "o" ? zero : Plus}
+      </button>
     ))}
   </div>
 );

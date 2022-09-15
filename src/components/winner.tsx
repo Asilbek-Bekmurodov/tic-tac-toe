@@ -4,7 +4,7 @@ import { Plus } from "../icons";
 import { O } from "../icons";
 
 interface WinnerProps {
-  icon: "x" | "o";
+  icon: string;
 }
 
 const Winner: FC<WinnerProps> = ({ icon }) => {

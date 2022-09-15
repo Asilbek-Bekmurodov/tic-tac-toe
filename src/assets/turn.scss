@@ -1,0 +1,30 @@
+.turn {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+
+  &_icons {
+    display: flex;
+
+    gap: 1rem;
+    svg {
+      width: 43px;
+      height: 43px;
+    }
+  }
+  &_dots {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    div {
+      margin-top: 10px;
+      border: 3px solid #42f802;
+      height: 23px;
+      width: 23px;
+      border-radius: 300px;
+    }
+    .active {
+      background: #42f802;
+    }
+  }
+}

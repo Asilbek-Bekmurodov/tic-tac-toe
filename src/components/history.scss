@@ -1,7 +1,13 @@
 .history {
   width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 10vh;
+  z-index: 1000;
   .history-cart {
-    width: max-content;
+    cursor: pointer;
+    max-width: 100px;
     color: white;
     background: linear-gradient(180deg, #59f90f 0%, #1e958e 100%);
     border-radius: 43px;

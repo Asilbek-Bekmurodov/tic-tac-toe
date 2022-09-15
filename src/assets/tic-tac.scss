@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  &_nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2rem 4rem;
+    align-items: flex-start;
+  }
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    &_history {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}
+
+.none {
+  width: 102px;
+}
